@@ -20,7 +20,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-    background-image: -webkit-linear-gradient(rgba(29, 222, 187, 1), rgba(152, 255, 251, 1));
+    background-color: var(--primaryColor);
     border-radius: .625rem;
 }
 

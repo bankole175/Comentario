@@ -35,21 +35,22 @@ const Feedback = (props: Props) => {
         <div className={styles.feedbackContainer}>
           <ul className={styles.users}>
             <li className={`${styles.fbText} ${styles.textDark}`}>{title}</li>
-            {feedback.map((fb) => (
+            {feedback.map((feedbackItem) => (
               <li
+                key={feedbackItem.id}
                 className={`${styles.user} ${
-                  selectedFeedback && fb.id === selectedFeedback.id
+                  selectedFeedback && feedbackItem.id === selectedFeedback.id
                     ? styles.activeUser
                     : styles.bgWhite
                 }`}
-                onClick={() => setSelectedFeedback(fb)}
+                onClick={() => setSelectedFeedback(feedbackItem)}
               >
                 <User
-                  name={type === 'given' ? fb.receiver.name : fb.giver.name}
+                  name={type === 'given' ? feedbackItem.receiver.name : feedbackItem.giver.name}
                   avatarUrl={
                     type === 'given'
-                      ? fb.receiver.avatarUrl
-                      : fb.giver.avatarUrl
+                      ? feedbackItem.receiver.avatarUrl
+                      : feedbackItem.giver.avatarUrl
                   }
                 />
               </li>
