@@ -5,8 +5,8 @@ import {
   DispatchProgressContext,
   ProgressContext,
 } from '../../context/ProgressProvider'
-import { QuestionContext, QuestionT } from '../../context/QuestionProvider'
-import { FeedbackFormPayloadT } from '../../context/types'
+import { QuestionContext } from '../../context/QuestionProvider'
+import { FeedbackFormPayloadT, QuestionT } from '../../context/types'
 
 type Props = {
   feedbackPayload: FeedbackFormPayloadT[]

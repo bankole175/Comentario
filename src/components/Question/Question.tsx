@@ -1,7 +1,7 @@
 import styles from './question.module.css'
 import ProgressBar from '../ProgressBar/ProgressBar'
 import { useContext, useEffect, useState } from 'react'
-import { FeedbackFormPayloadT } from '../../context/types'
+import { FeedbackFormPayloadT, QuestionT } from '../../context/types'
 import { AccountContext } from '../../context/AccountProvider'
 import { DispatchFeedbackContext } from '../../context/FeedbackProvider'
 import Initial from '../Initial'
@@ -13,7 +13,6 @@ import { TextArea } from '../Input'
 import { Scale } from '../Input'
 import { SingleSelect } from '../Input'
 import { QuestionNavigation } from './QuestionNavigation'
-import { QuestionT } from '../../context/QuestionProvider'
 
 type Props = {
   questions: QuestionT[] | null

@@ -1,15 +1,5 @@
 import React, { createContext, useReducer } from 'react'
-
-export type QuestionT = {
-  id: string
-  type: 'scale' | 'text' | 'singleSelect'
-  required: boolean
-  label: string
-  options: {
-    label: string
-    value: number
-  }[]
-}
+import { QuestionT } from './types'
 
 type DispatchQuestionContextT = any
 

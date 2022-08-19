@@ -1,5 +1,5 @@
 import styles from './input.module.css'
-import { QuestionT } from '../../context/QuestionProvider'
+import { QuestionT } from '../../context/types'
 
 type Props = {
   question: QuestionT

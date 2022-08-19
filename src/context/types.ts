@@ -23,3 +23,14 @@ export type FeedbackFormPayloadT = {
   type: string
   value: any
 }
+
+export type QuestionT = {
+  id: string
+  type: 'scale' | 'text' | 'singleSelect'
+  required: boolean
+  label: string
+  options: {
+    label: string
+    value: number
+  }[]
+}
