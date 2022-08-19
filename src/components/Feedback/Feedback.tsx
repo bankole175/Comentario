@@ -46,7 +46,11 @@ const Feedback = (props: Props) => {
                 onClick={() => setSelectedFeedback(feedbackItem)}
               >
                 <User
-                  name={type === 'given' ? feedbackItem.receiver.name : feedbackItem.giver.name}
+                  name={
+                    type === 'given'
+                      ? feedbackItem.receiver.name
+                      : feedbackItem.giver.name
+                  }
                   avatarUrl={
                     type === 'given'
                       ? feedbackItem.receiver.avatarUrl
