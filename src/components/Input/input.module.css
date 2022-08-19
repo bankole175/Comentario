@@ -1,0 +1,63 @@
+/*textarea*/
+.textAreaBox {
+    width: 750px;
+    height: 231px;
+    padding: 10px;
+    border: var(--baseBorder);
+
+    border-radius: 3px;
+}
+
+.textAreaBox:focus {
+    border: 1px solid var(--primaryColor);
+    outline: 0;
+}
+
+/*scale*/
+.scaleFlex {
+    display: flex;
+    gap: .1rem;
+}
+
+.scaleBox {
+    width: 74px;
+    height: 74px;
+    cursor: pointer;
+}
+
+.scaleCount {
+    color: var(--comentarioBlack);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .15em;
+    line-height: 1.375rem;
+    float: right;
+    padding-top: 0.5rem;
+}
+
+/*single select*/
+.option {
+    background-color: var(--lightGrey);
+    border-radius: 3px;
+}
+
+.optionDiv {
+    border-radius: 3px;
+    padding: .625rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.361875rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    width: 750px;
+}
+
+.optionSelected {
+    background-color: var(--comentarioDark);
+    color: #FFFFFF;
+}
+
+.option:hover {
+    background-color: var(--comentarioDark);
+    color: var(--white)
+}

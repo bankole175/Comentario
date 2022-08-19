@@ -1,0 +1,11 @@
+.initials {
+    border-radius: 50%;
+    border: var(--baseBorder);
+    height: 58px;
+    width: 58px;
+    align-items: center;
+    background-color: var(--primaryLightColor);
+    display: flex;
+    font-size: var(--fs-xl);
+    justify-content: center;
+}

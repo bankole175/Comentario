@@ -1,0 +1,6 @@
+.title {
+  color: var(--comentarioBlack);
+  font-weight: var(--fw-semibold);
+  font-size: 1.9375rem;
+  line-height: 2.625rem;
+}
