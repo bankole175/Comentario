@@ -22,9 +22,12 @@
 
 .heading {
   margin-bottom: var(--baseVertSpacing);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--primaryColor);
 }
 
 .background {
-  background-image: url(./background.png);
+  background-color: var(--primaryColor);
   background-size: cover;
 }

@@ -78,7 +78,7 @@ const Feedback = (props: Props) => {
                               style={{
                                 backgroundColor:
                                   option <= fbItem.value
-                                    ? '#AB61E5'
+                                    ? '#48a3fb'
                                     : '#F2F3F4',
                               }}
                               key={index}

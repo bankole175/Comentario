@@ -15,7 +15,7 @@ export const Scale = (props: Props) => {
         {scaleOption.map((option, optionIndex) => (
           <div
             style={{
-              backgroundColor: option <= value ? '#AB61E5' : '#F2F3F4',
+              backgroundColor: option <= value ? '#48a3fb' : '#F2F3F4',
             }}
             key={optionIndex}
             onClick={() => handleFormChange(option)}
